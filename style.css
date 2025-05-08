@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #FFFDF6;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #F8B55F;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#UNAID{
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#noteInput {
+    width: 100%;
+    max-width: 600px;
+    height: 120px;
+    background-color: #ffb95edc;
+    color: #000;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    resize: none;
+}
+
+#noteInput:focus {
+    outline: none;
+    border-color: #F8B55F;
+    box-shadow: 0 0 8px rgba(248, 181, 95, 0.7);
+}
+
+#noteInput::placeholder {
+    color: #222;
+    opacity: 0.7;
+}
+
+#noteInput:focus::placeholder {
+    opacity: 0.5;
+}
+
+button {
+    background-color: #007ad1;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005ea3;
+    color: #ffffff;
+}
+
+#buttonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#notesList {
+    list-style: decimal;
+    padding-left: 0;
+    max-width: 600px;
+    width: 100%;
+}
+
+#notesList li {
+    background-color: #1c1c1c;
+    padding: 12px 16px;
+    margin: 10px 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    list-style: decimal;
+}
